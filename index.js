@@ -3,5 +3,8 @@ require('dotenv').config()
 
 const bot = new Telegraf(process.env.SECRET_KEY)
 
-//console.log(process.env)
+bot.command('start', (ctx) => {
+    
+    ctx.reply('Добро пожаловать, '+ ctx.message.chat.first_name)
+})
 bot.launch()
