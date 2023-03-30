@@ -9,6 +9,7 @@ Telegram - @taxi_edinoe_bot
 # installing node-modules
 ```
 npm init -y
-npm ci
+npm i telegraf@3.39
+npm i nodemon -D
 npm start
 ```
